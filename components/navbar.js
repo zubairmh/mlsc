@@ -35,7 +35,7 @@ export default function Navbar({ children }) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 100);
+    }, 4100);
   }, []);
   let paths = {
     "/": "Home",
