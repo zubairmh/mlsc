@@ -71,7 +71,7 @@ export default function Navbar({ children }) {
           <button
             onClick={() => {
               toast({
-                variant:"destructive",
+                variant: "destructive",
                 title: "Forms are Closed",
               });
             }}
@@ -101,14 +101,21 @@ export default function Navbar({ children }) {
               <DropdownMenuItem onClick={() => router.push("/events")}>
                 Events
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => router.push("/form")}>
+              <DropdownMenuItem
+                onClick={() =>
+                  toast({
+                    variant: "destructive",
+                    title: "Forms are Closed",
+                  })
+                }
+              >
                 Form
               </DropdownMenuItem>
             </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-      <Toaster/>
+      <Toaster />
       {children}
     </div>
   );
