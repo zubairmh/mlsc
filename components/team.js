@@ -1,8 +1,5 @@
 import Image from "next/image";
-import MLSC from "@/public/mlsc.png";
 import reet from "@/public/reet.jpeg";
-import { Link } from "lucide-react";
-import Globe from "./globe";
 export default function TeamComponent() {
   return (
     <div class="h-64 grid grid-cols-3 gap-8 p-8 overflow-y-scroll grow pt-20">
