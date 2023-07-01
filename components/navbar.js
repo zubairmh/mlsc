@@ -13,7 +13,7 @@ export default function Navbar({ children }) {
       setLoading(true)
       setTimeout(()=>{
         setLoading(false)
-      }, 2000)
+      }, 4100)
     }, [])
     if(loading) {
       return <GlobeComp/>
