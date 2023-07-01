@@ -1,3 +1,6 @@
+import EventComponent from "@/components/events"
 export default function Events() {
-    return <></>
+    return <EventComponent>
+        
+    </EventComponent>
 }

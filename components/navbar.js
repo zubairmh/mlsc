@@ -25,8 +25,8 @@ export default function Navbar({ children }) {
   //     });
   //   }, []);
   return (
-    <div className="flex flex-col min-h-screen min-w-full text-white fixed pb-20">
-      <div className={`h-16 flex flex-row p-5 items-center gap-4 ${inter2.className}`}>
+    <div className="flex flex-col min-h-screen min-w-full text-white fixed">
+      <div className={`h-16 flex flex-row w-full p-5 items-center gap-4 ${inter2.className} fixed`}>
         <Link className="flex flex-row items-center gap-4" href="/">
           <Image alt="MLSC logo" width={32} height={32} src={MLSC}></Image>
           <h1 className={inter.className}>MLSC</h1>
@@ -36,9 +36,11 @@ export default function Navbar({ children }) {
         <Link href="/about">About</Link>
         <Link href="/team">Team</Link>
         <Link href="/events">Events</Link>
+        <Link href="#">Form</Link>
       </div>
       <ToastContainer />
       {children}
+      
     </div>
   );
 }
