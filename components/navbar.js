@@ -56,7 +56,7 @@ export default function Navbar({ children }) {
   return (
     <div className="flex flex-col min-h-screen min-w-full text-white fixed">
       <div
-        className={`h-16 flex flex-row w-full p-5 items-center gap-4 ${inter2.className} fixed`}
+        className={`h-16 flex flex-row w-full p-5 items-center gap-4 ${inter2.className} fixed z-10`}
       >
         <Link className="flex flex-row items-center gap-4" href="/">
           <Image alt="MLSC logo" width={32} height={32} src={MLSC}></Image>
@@ -68,16 +68,7 @@ export default function Navbar({ children }) {
           <Link href="/about">About</Link>
           <Link href="/team">Team</Link>
           <Link href="/events">Events</Link>
-          <button
-            onClick={() => {
-              toast({
-                variant: "destructive",
-                title: "Forms are Closed",
-              });
-            }}
-          >
-            Form
-          </button>
+          <Link href="/forms">Form</Link>
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -101,14 +92,7 @@ export default function Navbar({ children }) {
               <DropdownMenuItem onClick={() => router.push("/events")}>
                 Events
               </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() =>
-                  toast({
-                    variant: "destructive",
-                    title: "Forms are Closed",
-                  })
-                }
-              >
+              <DropdownMenuItem onClick={() => router.push("/forms")}>
                 Form
               </DropdownMenuItem>
             </DropdownMenuGroup>
