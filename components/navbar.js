@@ -1,7 +1,6 @@
 import Image from "next/image";
 import MLSC from "@/public/mlsc.png";
 import Link from "next/link";
-import { ToastAction } from "@/components/ui/toast";
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
 import { Inter } from "next/font/google";
@@ -67,7 +66,17 @@ export default function Navbar({ children }) {
           <Link href="/"> Home </Link>
           <Link href="/about">About</Link>
           <Link href="/team">Team</Link>
-          <Link href="/events">Events</Link>
+          <button
+            onClick={() =>
+              toast({
+                variant: "destructive",
+                title: "Page Closed",
+                description: "Events are yet to be revealed",
+              })
+            }
+          >
+            Events
+          </button>
           <Link href="/forms">Form</Link>
         </div>
         <DropdownMenu>
@@ -89,7 +98,15 @@ export default function Navbar({ children }) {
               <DropdownMenuItem onClick={() => router.push("/team")}>
                 Team
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => router.push("/events")}>
+              <DropdownMenuItem
+                onClick={() =>
+                  toast({
+                    variant: "destructive",
+                    title: "Page Closed",
+                    description: "Events are yet to be revealed",
+                  })
+                }
+              >
                 Events
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push("/forms")}>
