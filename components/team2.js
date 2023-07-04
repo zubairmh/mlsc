@@ -22,13 +22,18 @@ export default function TeamComponent2() {
   },
   {
     name:"Harshita ",
-    icon:"/placeholder.png",
+    icon:"/harshita.jpeg",
     position:"Management Head"
   },
   {
     name:"Zubair Mohammed",
     icon:"/zubair.jpeg",
     position:"Technical Head"
+  },
+  {
+    name:"Saiyam Singhi",
+    icon:"/saiyam.jpeg",
+    position:"Design Head"
   },
   {
     name:"Reetinder Singh",
@@ -44,11 +49,6 @@ export default function TeamComponent2() {
     name:"Manav Singhal",
     icon:"/placeholder.png",
     position:"Vice Management Head"
-  },
-  {
-    name:"Saiyam Singhi",
-    icon:"/placeholder.png",
-    position:"Design Head"
   },
 ];
   return (

@@ -64,7 +64,6 @@ export default function Navbar({ children }) {
         <div className="grow"></div>
         <div className="hidden sm:flex flex-row  gap-4">
           <Link href="/"> Home </Link>
-          <Link href="/about">About</Link>
           <Link href="/team">Team</Link>
           <button
             onClick={() =>
@@ -91,9 +90,6 @@ export default function Navbar({ children }) {
             <DropdownMenuGroup>
               <DropdownMenuItem onClick={() => router.push("/")}>
                 Home
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => router.push("/about")}>
-                About
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push("/team")}>
                 Team
