@@ -47,7 +47,7 @@ export default function TeamComponent2() {
   },
   {
     name:"Manav Singhal",
-    icon:"/placeholder.png",
+    icon:"/manav.jpeg",
     position:"Vice Management Head"
   },
 ];

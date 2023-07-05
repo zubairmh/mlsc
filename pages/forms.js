@@ -405,8 +405,8 @@ export default function Forms() {
           </span>
         </div>
         <div className="flex flex-row items-center gap-2">
-          <img className="w-12 h-10" src={`https://mlsc.zubairmh.xyz/captcha?${reloadImage}`}/>
-          <Button className="h-10 text-black p-2" onClick={()=>setreloadImage(Date.now())}><RefreshCcw className="w-full h-full" size={64} /></Button>
+          <img className="h-10" src={`https://mlsc.zubairmh.xyz/captcha?${reloadImage}`}/>
+          <Button className="w-10 h-10 text-black p-2" onClick={()=>setreloadImage(Date.now())}><RefreshCcw className="w-full h-full" size={64} /></Button>
         </div>
         
         <div className="flex flex-col gap-4">
@@ -419,7 +419,7 @@ export default function Forms() {
           ></input>
         </div>
         <button className="bg-white text-black p-2.5" type="submit">Submit</button>
-        <span className="text-gray-400">• Upon submission, <br/>You&apos;ll get an &quot;application <br/>submitted&quot; alert</span>
+        <span className="text-gray-400">• Upon successful<br/>submission, <br/>You&apos;ll get an &quot;application <br/>submitted&quot; alert</span>
         <div className="grow"></div>
       </div>
     );
