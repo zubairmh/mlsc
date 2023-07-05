@@ -406,7 +406,7 @@ export default function Forms() {
         </div>
         <div className="flex flex-row items-center gap-2">
           <img className="w-12 h-10" src={`https://mlsc.zubairmh.xyz/captcha?${reloadImage}`}/>
-          <Button className="w-10 h-10 text-black p-2" onClick={()=>setreloadImage(Date.now())}><RefreshCcw className="w-full h-full" size={64} /></Button>
+          <Button className="h-10 text-black p-2" onClick={()=>setreloadImage(Date.now())}><RefreshCcw className="w-full h-full" size={64} /></Button>
         </div>
         
         <div className="flex flex-col gap-4">
