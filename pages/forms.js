@@ -355,8 +355,8 @@ export default function Forms() {
         <Separator />
         <div className="grow"></div>
         <div class="text-xl mb-4 p-3">
-          <span class="flex flex-row ">
-            Your profile/project/portofolio links (comma separated)
+          <span class="flex flex-col ">
+            Your profile/project<br/> links (comma separated)
           </span>
         </div>
         <div className="flex flex-col gap-4">
