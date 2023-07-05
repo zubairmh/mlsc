@@ -466,7 +466,7 @@ export default function Forms() {
       style={inter.style}
       class="flex flex-col justify-center items-center min-h-screen grow pt-14 pl-5 pb-5 pr-5 text-white "
     >
-      <div className="grow flex flex-col bg-black border-cyan-400 border-2 border-solid rounded-lg drop-shadow-xl w-full p-2">
+      <div className="grow flex flex-col bg-black border-cyan-400 border-2 border-solid rounded-lg shadow-lg shadow-cyan-400 drop-shadow-lg w-full p-2">
         <Progress value={((currentQuestion+1)/11) * 100} className="w-full" />
         <div className="flex flex-row grow">
           <div className="flex items-center justify-center">
