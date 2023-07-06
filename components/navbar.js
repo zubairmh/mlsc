@@ -64,18 +64,8 @@ export default function Navbar({ children }) {
         <div className="grow"></div>
         <div className="hidden sm:flex flex-row  gap-4">
           <Link href="/"> Home </Link>
+          <Link href="/about">About</Link>
           <Link href="/team">Team</Link>
-          <button
-            onClick={() =>
-              toast({
-                variant: "destructive",
-                title: "Page Closed",
-                description: "Events are yet to be revealed",
-              })
-            }
-          >
-            Events
-          </button>
           <Link href="/forms">Form</Link>
         </div>
         <DropdownMenu>
@@ -91,20 +81,12 @@ export default function Navbar({ children }) {
               <DropdownMenuItem onClick={() => router.push("/")}>
                 Home
               </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => router.push("/about")}>
+                About
+              </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push("/team")}>
-                Team
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() =>
-                  toast({
-                    variant: "destructive",
-                    title: "Page Closed",
-                    description: "Events are yet to be revealed",
-                  })
-                }
-              >
-                Events
-              </DropdownMenuItem>
+                  Team
+                </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push("/forms")}>
                 Form
               </DropdownMenuItem>
