@@ -1,38 +1,59 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 export default function EventComponent() {
-  const slide=useRef(0);
-  
-  const slides=["/reet.jpeg", "/parag.jpeg", "/zubair.jpg"];
-  const [currentSlide, setCurrentSlide]=useState(slides[slide.current])
+  const slide = useRef(0);
+  const [slidePaused, setSlidePaused] = useState(false);
+  const slides = ["/WARZONE.png", "/ASTELLAR.png"];
+  const [currentSlide, setCurrentSlide] = useState(slides[slide.current]);
   useEffect(() => {
     console.log("yes");
-    const interval=setInterval(() => {
-      console.log("slide change");
-      if(slide.current>=slides.length-1) {
-        slide.current=0
+    let interval = setInterval(() => {
+      if (!slidePaused) {
+        console.log("slide change");
+        if (slide.current >= slides.length - 1) {
+          slide.current = 0;
+        } else {
+          slide.current += 1;
+        }
+        setCurrentSlide(slides[slide.current]);
+        console.log(`slide: ${slide.current}`);
       } else {
-        slide.current+=1
+        console.log("Slide Paused");
       }
-      setCurrentSlide(slides[slide.current])
-      console.log(`slide: ${slide.current}`);
-    }, 2000);
+    }, 5000);
     return () => {
-        window.clearInterval(interval);
-    }; 
-  }, []);
+      console.log("Interval Cleared");
+      window.clearInterval(interval);
+    };
+  }, [slidePaused]);
 
   return (
     <>
       <div className="flex justify-center items-center grow">
         <AnimatePresence initial={false} mode="popLayout">
           <motion.img
-            className="w-64 h-64"
+            className="w-full sm:w-5/6"
+            onMouseEnter={() => {
+              console.log("Slide pausing...");
+              setSlidePaused(true);
+            }}
+            onMouseLeave={() => {
+              console.log("Slide unpausing...");
+              setSlidePaused(false);
+            }}
+            onTouchStart={() => {
+              console.log("Slide pausing...");
+              setSlidePaused(true);
+            }}
+            onTouchLeave={() => {
+              console.log("Slide unpausing...");
+              setSlidePaused(false);
+            }}
             key={currentSlide}
             src={currentSlide}
-            initial={{ x: 600, y: -500, opacity: 0.5 }}
-            animate={{ x: 0, y: 0, opacity: 1, transition:{duration:1} }}
-            exit={{ x: -600, y: 500, opacity: 0, transition:{duration:1} }}
+            initial={{ x: 1200, y: 0, opacity: 0.5, scale:0.8 }}
+            animate={{ x: 0, y: 0, opacity: 1, scale:1, transition: { duration: 1 } }}
+            exit={{ x: -1200, y: 0, opacity: 0, scale:0.8, transition: { duration: 1 } }}
           />
         </AnimatePresence>
       </div>

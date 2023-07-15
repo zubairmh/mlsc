@@ -1,16 +1,18 @@
 import Reet from "@/public/reet.jpeg";
+import ment from "@/public/pankajnarula.jpg";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Separator } from "./ui/separator";
 import { Phone } from "lucide-react";
-import {BsTelephoneFill} from "react-icons/bs"
-import {AiOutlineMail} from "react-icons/ai"
+import { BsTelephoneFill } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
+import { AiOutlineMail } from "react-icons/ai";
 const inter = Inter({ weight: "700", subsets: ["latin"] });
 export default function TeamComponent2() {
   const secretaries = [
     {
       name: "Parag Goyal",
-      icon: "/parag.jpeg",
+      icon: "/parag.jpg",
       position: "General Secretary",
     },
     {
@@ -40,6 +42,21 @@ export default function TeamComponent2() {
       icon: "/manav.jpeg",
       position: "Vice Management Head",
     },
+    {
+      name: "Mohin Gupta",
+      icon: "/mohin.png",
+      position: "Management Team",
+    },
+    {
+      name: "Priyansh Goel",
+      icon: "/priyansh.jpeg",
+      position: "Management Team",
+    },
+    {
+      name: "Pranav Gautam",
+      icon: "/pranav.jpg",
+      position: "Management Team",
+    },
   ];
   const tech = [
     {
@@ -52,12 +69,37 @@ export default function TeamComponent2() {
       icon: "/reet.jpeg",
       position: "Vice Technical Head",
     },
+    {
+      name: "Dhawal",
+      icon: "/dhawal.jpg",
+      position: "Tech Team",
+    },
+    {
+      name: "Kunal Bhalla",
+      icon: "/kunal.jpg",
+      position: "Tech Team",
+    },
   ];
   const design = [
     {
       name: "Saiyam Singhi",
       icon: "/saiyam.jpeg",
       position: "Design Head",
+    },
+    {
+      name: "Jatin Aggarwal",
+      icon: "/jatin.jpg",
+      position: "Design Team",
+    },
+    {
+      name: "Raj Chaudhary",
+      icon: "/raj.jpg",
+      position: "Design Team",
+    },
+    {
+      name: "Simran",
+      icon: "/simran.jpg",
+      position: "Design Team",
     },
   ];
   return (
@@ -68,17 +110,58 @@ export default function TeamComponent2() {
       <Separator />
 
       <div class="flex flex-col gap-4 overflow-y-auto ml-4 h-[33rem] text-white grow p-4">
-        <h1 className={`text-start ${inter.className} text-2xl self-start`}>
+        <h1 className={`text-start ${inter.className} text-3xl self-start`}>
           Our Mentors
         </h1>
-        <div className="flex flex-col gap-1 w-full p-4 text-black bg-white outline-none outline-offset-4 outline-4">
-          <h1 style={inter.style} className="text-3xl">Dr. Pankaj Narula</h1>
-          <span className="flex flex-row items-center gap-2"><BsTelephoneFill size={24}/><span>+91 98822 42222</span></span>
-          <button onClick={()=>window.open("mailto:pankaj.narula@thapar.edu", "_blank")} className="flex flex-row items-center gap-2"><AiOutlineMail size={24}/><span>pankaj.narula@thapar.edu</span></button>
-          <p>Dr Pankaj Narula is working as an Assistant Professor in the School of Mathematics (SOM), Thapar Institute of Engineering & Technology (TIET), Patiala. He received his Master&apos;s degree in Mathematics (M.Sc.) from Panjab University, Chandigarh in 2009 and Doctor of Philosophy (PhD) in Applied Mathematics from Indian Institute of Technology Mandi (HP) in 2018. He is also our mentor and president of Microsoft Learn Student Chapter, TIET Derabassi</p>
+        <div className="sm:flex-row items-center sm:items-start flex-col flex text-black bg-white rounded-lg drop-shadow-xl  ">
+          <Image src={ment} width="350" alt="" className=" drop-shadow-xl" />
+          <div className="flex flex-col w-full p-4 outline-none outline-offset-4 outline-4 gap-2 grow">
+            <h1 style={inter.style} className="text-3xl">
+              Dr. Pankaj Narula
+            </h1>
+            <span className="flex flex-row items-center gap-2">
+              <BsTelephoneFill size={24} />
+              <span>+91 98822 42222</span>
+            </span>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://sites.google.com/view/pankaj-narula",
+                  "_blank"
+                )
+              }
+              className="flex flex-row items-center gap-2"
+            >
+              <CgWebsite size={24} />
+              <span>https://sites.google.com/view/pankaj-narula</span>
+            </button>
+
+            <button
+              onClick={() =>
+                window.open("mailto:pankaj.narula@thapar.edu", "_blank")
+              }
+              className="flex flex-row items-center gap-2"
+            >
+              <AiOutlineMail size={24} />
+              <span>pankaj.narula@thapar.edu</span>
+            </button>
+            <div class="h-8 sm:h-12">
+              
+            </div>
+            <p >
+              Dr Pankaj Narula is working as an Assistant Professor in the
+              School of Mathematics (SOM), Thapar Institute of Engineering &
+              Technology (TIET), Patiala. He received his Master&apos;s degree
+              in Mathematics (M.Sc.) from Panjab University, Chandigarh in 2009
+              and Doctor of Philosophy (PhD) in Applied Mathematics from Indian
+              Institute of Technology Mandi (HP) in 2018. He is also our mentor
+              and president of Microsoft Learn Student Chapter, TIET Derabassi
+            </p>
+          </div>
         </div>
-        <h1 className={`text-start ${inter.className} text-2xl self-start`}>
-          Secretaries
+
+        <h1 className={`text-start ${inter.className} text-3xl mt-5 self-start`}>
+        👨‍⚖️ Secretaries
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center sm:justify-items-start">
           {secretaries.map((x, i) => (
@@ -106,8 +189,8 @@ export default function TeamComponent2() {
             </div>
           ))}
         </div>
-        <h1 className={`text-start ${inter.className} text-2xl self-start`}>
-          Tech Team
+        <h1 className={`text-start ${inter.className} text-3xl mt-5 self-start  `}>
+        👨‍💻 Tech Team
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center sm:justify-items-start">
           {tech.map((x, i) => (
@@ -135,8 +218,8 @@ export default function TeamComponent2() {
             </div>
           ))}
         </div>
-        <h1 className={`text-start ${inter.className} text-2xl self-start`}>
-          Management Team
+        <h1 className={`text-start ${inter.className} text-3xl mt-5 self-start`}>
+        👨‍✈️ Management Team
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center sm:justify-items-start">
           {management.map((x, i) => (
@@ -164,8 +247,8 @@ export default function TeamComponent2() {
             </div>
           ))}
         </div>
-        <h1 className={`text-start ${inter.className} text-2xl self-start`}>
-          Design Team
+        <h1 className={`text-start ${inter.className} text-3xl mt-5 self-start`}>
+        👨‍🚀 Design Team
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center sm:justify-items-start">
           {design.map((x, i) => (
