@@ -6,8 +6,11 @@ import { Separator } from "./ui/separator";
 import { Phone } from "lucide-react";
 import { BsTelephoneFill } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
-import { AiOutlineMail } from "react-icons/ai";
+import { HiOutlineMail } from "react-icons/hi";
+import Link from "next/link"
 const inter = Inter({ weight: "700", subsets: ["latin"] });
+const inter2 = Inter({ weight: "600", subsets: ["latin"] });
+const inter3 = Inter({ weight: "500", subsets: ["latin"] });
 export default function TeamComponent2() {
   const secretaries = [
     {
@@ -110,7 +113,7 @@ export default function TeamComponent2() {
       <Separator />
 
       <div class="flex flex-col gap-4 overflow-y-auto ml-4 h-[33rem] text-white grow p-4">
-        <h1 className={`text-start ${inter.className} text-3xl self-start`}>
+        <h1 className={`text-start ${inter.className} text-4xl self-center md:self-start`}>
           Our Mentors
         </h1>
         <div className="sm:flex-row items-center sm:items-start flex-col flex text-black bg-white rounded-lg drop-shadow-xl  ">
@@ -119,63 +122,43 @@ export default function TeamComponent2() {
             <h1 style={inter.style} className="text-3xl">
               Dr. Pankaj Narula
             </h1>
-            <span className="flex flex-row items-center gap-2">
-              <BsTelephoneFill size={24} />
-              <span>+91 98822 42222</span>
-            </span>
-            <button
-              onClick={() =>
-                window.open(
-                  "https://sites.google.com/view/pankaj-narula",
-                  "_blank"
-                )
-              }
-              className="flex flex-row items-center gap-2"
+            <h1 style={inter2.style} className="text-xl">
+              Assistant Professor
+            </h1>
+            <h1 style={inter3.style} className="text-base text-gray-600">
+              School of Mathematics
+            </h1>
+            <h1 style={inter3.style} className="text-base text-gray-600">
+              Thapar Institute of Engineering and Technology
+            </h1>
+            <h1 style={inter3.style} className="text-base text-gray-600">
+              (Deemed to be University)
+            </h1>
+            <Link href="mailto:pankaj.narula@thapar.edu" target="_blank"
+              className="flex flex-row items-center gap-1"
             >
-              <CgWebsite size={24} />
-              <span>https://sites.google.com/view/pankaj-narula</span>
-            </button>
-
-            <button
-              onClick={() =>
-                window.open("mailto:pankaj.narula@thapar.edu", "_blank")
-              }
-              className="flex flex-row items-center gap-2"
-            >
-              <AiOutlineMail size={24} />
-              <span>pankaj.narula@thapar.edu</span>
-            </button>
-            <div class="h-8 sm:h-12">
-              
-            </div>
-            <p >
-              Dr Pankaj Narula is working as an Assistant Professor in the
-              School of Mathematics (SOM), Thapar Institute of Engineering &
-              Technology (TIET), Patiala. He received his Master&apos;s degree
-              in Mathematics (M.Sc.) from Panjab University, Chandigarh in 2009
-              and Doctor of Philosophy (PhD) in Applied Mathematics from Indian
-              Institute of Technology Mandi (HP) in 2018. He is also our mentor
-              and president of Microsoft Learn Student Chapter, TIET Derabassi
-            </p>
+              <HiOutlineMail size={24} />
+              <span className="text-base">pankaj.narula@thapar.edu</span>
+            </Link>
           </div>
         </div>
 
-        <h1 className={`text-start ${inter.className} text-3xl mt-5 self-start`}>
+        <h1 className={`text-start ${inter.className} text-4xl mt-10 self-center md:self-start`}>
         👨‍⚖️ Secretaries
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center sm:justify-items-start">
           {secretaries.map((x, i) => (
             <div
               key={i}
-              className="group w-64 h-64 relative text-center bg-slate-300 outline-none outline-offset-4 outline-4 hover:outline-[#FD3D48]"
+              className="group w-80 h-80 relative text-center bg-slate-300 outline-none outline-offset-4 outline-4 hover:outline-[#FD3D48]"
             >
               <h1
                 style={inter.style}
-                className="absolute text-xl bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-50%] group-hover:translate-y-[-110%] group-hover:scale-125 transition delay-75 cursor-default bg-black group-hover:bg-transparent"
+                className="absolute text-2xl bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-50%] group-hover:translate-y-[-110%] group-hover:scale-125 transition delay-75 cursor-default bg-black group-hover:bg-transparent"
               >
                 {x.name}
               </h1>
-              <h4 className="absolute text-md bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-10%] group-hover:translate-y-[-30%] group-hover:scale-125 opacity-0 group-hover:opacity-100 transition delay-75 text-gray-100 cursor-default">
+              <h4 className="absolute text-lg bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-10%] group-hover:translate-y-[-30%] group-hover:scale-125 opacity-0 group-hover:opacity-100 transition delay-75 text-gray-100 cursor-default">
                 {x.position}
               </h4>
               <div className="absolute h-full w-full group-hover:bg-gradient-to-t from-red-600 via-transparent to-transparent" />
@@ -189,22 +172,22 @@ export default function TeamComponent2() {
             </div>
           ))}
         </div>
-        <h1 className={`text-start ${inter.className} text-3xl mt-5 self-start  `}>
+        <h1 className={`text-start ${inter.className} text-4xl mt-10 self-center md:self-start`}>
         👨‍💻 Tech Team
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center sm:justify-items-start">
           {tech.map((x, i) => (
             <div
               key={i}
-              className="group w-64 h-64 relative text-center bg-slate-300 outline-none outline-offset-4 outline-4 hover:outline-[#FD3D48]"
+              className="group w-80 h-80 relative text-center bg-slate-300 outline-none outline-offset-4 outline-4 hover:outline-[#FD3D48]"
             >
               <h1
                 style={inter.style}
-                className="absolute text-xl bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-50%] group-hover:translate-y-[-110%] group-hover:scale-125 transition delay-75 cursor-default bg-black group-hover:bg-transparent"
+                className="absolute text-2xl bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-50%] group-hover:translate-y-[-110%] group-hover:scale-125 transition delay-75 cursor-default bg-black group-hover:bg-transparent"
               >
                 {x.name}
               </h1>
-              <h4 className="absolute text-md bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-10%] group-hover:translate-y-[-30%] group-hover:scale-125 opacity-0 group-hover:opacity-100 transition delay-75 text-gray-100 cursor-default">
+              <h4 className="absolute text-lg bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-10%] group-hover:translate-y-[-30%] group-hover:scale-125 opacity-0 group-hover:opacity-100 transition delay-75 text-gray-100 cursor-default">
                 {x.position}
               </h4>
               <div className="absolute h-full w-full group-hover:bg-gradient-to-t from-red-600 via-transparent to-transparent" />
@@ -218,22 +201,22 @@ export default function TeamComponent2() {
             </div>
           ))}
         </div>
-        <h1 className={`text-start ${inter.className} text-3xl mt-5 self-start`}>
+        <h1 className={`text-start ${inter.className} text-3xl sm:text-4xl mt-10 self-center md:self-start`}>
         👨‍✈️ Management Team
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center sm:justify-items-start">
           {management.map((x, i) => (
             <div
               key={i}
-              className="group w-64 h-64 relative text-center bg-slate-300 outline-none outline-offset-4 outline-4 hover:outline-[#FD3D48]"
+              className="group w-80 h-80 relative text-center bg-slate-300 outline-none outline-offset-4 outline-4 hover:outline-[#FD3D48]"
             >
               <h1
                 style={inter.style}
-                className="absolute text-xl bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-50%] group-hover:translate-y-[-110%] group-hover:scale-125 transition delay-75 cursor-default bg-black group-hover:bg-transparent"
+                className="absolute text-2xl bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-50%] group-hover:translate-y-[-110%] group-hover:scale-125 transition delay-75 cursor-default bg-black group-hover:bg-transparent"
               >
                 {x.name}
               </h1>
-              <h4 className="absolute text-md bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-10%] group-hover:translate-y-[-30%] group-hover:scale-125 opacity-0 group-hover:opacity-100 transition delay-75 text-gray-100 cursor-default">
+              <h4 className="absolute text-lg bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-10%] group-hover:translate-y-[-30%] group-hover:scale-125 opacity-0 group-hover:opacity-100 transition delay-75 text-gray-100 cursor-default">
                 {x.position}
               </h4>
               <div className="absolute h-full w-full group-hover:bg-gradient-to-t from-red-600 via-transparent to-transparent" />
@@ -247,22 +230,22 @@ export default function TeamComponent2() {
             </div>
           ))}
         </div>
-        <h1 className={`text-start ${inter.className} text-3xl mt-5 self-start`}>
+        <h1 className={`text-start ${inter.className} text-4xl mt-10 self-center md:self-start`}>
         👨‍🚀 Design Team
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center sm:justify-items-start">
           {design.map((x, i) => (
             <div
               key={i}
-              className="group w-64 h-64 relative text-center bg-slate-300 outline-none outline-offset-4 outline-4 hover:outline-[#FD3D48]"
+              className="group w-80 h-80 relative text-center bg-slate-300 outline-none outline-offset-4 outline-4 hover:outline-[#FD3D48]"
             >
               <h1
                 style={inter.style}
-                className="absolute text-xl bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-50%] group-hover:translate-y-[-110%] group-hover:scale-125 transition delay-75 cursor-default bg-black group-hover:bg-transparent"
+                className="absolute text-2xl bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-50%] group-hover:translate-y-[-110%] group-hover:scale-125 transition delay-75 cursor-default bg-black group-hover:bg-transparent"
               >
                 {x.name}
               </h1>
-              <h4 className="absolute text-md bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-10%] group-hover:translate-y-[-30%] group-hover:scale-125 opacity-0 group-hover:opacity-100 transition delay-75 text-gray-100 cursor-default">
+              <h4 className="absolute text-lg bottom-0 left-[50%] font-bold z-10 whitespace-nowrap translate-x-[-50%] translate-y-[-10%] group-hover:translate-y-[-30%] group-hover:scale-125 opacity-0 group-hover:opacity-100 transition delay-75 text-gray-100 cursor-default">
                 {x.position}
               </h4>
               <div className="absolute h-full w-full group-hover:bg-gradient-to-t from-red-600 via-transparent to-transparent" />
