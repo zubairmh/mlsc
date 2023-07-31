@@ -42,7 +42,7 @@ export default function Forms() {
     }, [currentQuestion])
     return (
       <div className={`${status} flex-col grow w-full items-center justify-center`}>
-        <div className="p-5">Question 1/5</div>
+        <div className="p-5">Question 1/8</div>
         <Separator />
         <div className="grow"></div>
         <div class="text-xl mb-8 p-3">
@@ -71,7 +71,7 @@ export default function Forms() {
     }, [currentQuestion])
     return (
       <div className={`${status} flex-col grow w-full items-center justify-center`}>
-        <div className="p-5">Question 2/5</div>
+        <div className="p-5">Question 2/8</div>
         <Separator />
         <div className="grow"></div>
         <div class="text-xl p-10">
@@ -101,7 +101,7 @@ export default function Forms() {
     }, [currentQuestion])
     return (
       <div className={`${status} flex-col grow w-full items-center justify-center`}>
-        <div className="p-5">Question 3/5</div>
+        <div className="p-5">Question 3/8</div>
         <Separator />
         <div className="grow"></div>
         <div class="text-xl p-10">
@@ -132,7 +132,7 @@ export default function Forms() {
     }, [currentQuestion])
     return (
       <div className={`${status} flex-col grow w-full items-center justify-center`}>
-        <div className="p-5">Question 4/5</div>
+        <div className="p-5">Question 4/8</div>
         <Separator />
         <div className="grow"></div>
         <div class="text-xl mb-8 p-3">
@@ -182,105 +182,6 @@ export default function Forms() {
       </div>
     );
   }
-
-  // function Q5() {
-  //   const [status, setStatus] = useState("hidden")
-  //   useEffect(() => {
-  //     setStatus("hidden")
-  //     if (currentQuestion == 4) {
-  //       setStatus("flex")
-  //     }
-  //   }, [currentQuestion])
-  //   return (
-  //     <div className={`${status} flex-col grow w-full items-center justify-center`}>
-  //       <div className="p-5">Question 4/5</div>
-  //       <Separator />
-  //       <div className="grow"></div>
-  //       <div class="text-xl mb-8 p-3">
-  //         <span class="flex flex-row">
-  //           Are you comfortable working independently or as part of a team? Can
-  //           you provide examples of your experience in both scenarios?
-  //         </span>
-  //       </div>
-  //       <div className="flex flex-col gap-4">
-  //         <textarea
-  //           type="text"
-  //           {...register("independent")}
-  //           class="bg-gray-50 border h-28 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-  //           placeholder="Enter your response"
-  //           required
-  //         ></textarea>
-  //       </div>
-  //       <div className="grow"></div>
-  //     </div>
-  //   );
-  // }
-  // function Q6() {
-  //   const [status, setStatus] = useState("hidden")
-  //   useEffect(() => {
-  //     setStatus("hidden")
-  //     if (currentQuestion == 4) {
-  //       setStatus("flex")
-  //     }
-  //   }, [currentQuestion])
-  //   return (
-  //     <div className={`${status} flex-col grow w-full items-center justify-center`}>
-  //       <div className="p-5">Question 5/5</div>
-  //       <Separator />
-  //       <div className="grow"></div>
-  //       <div class="text-xl mb-8 p-3">
-  //         <span class="flex flex-row ">
-  //           If you could choose any fictional character as your work buddy, who
-  //           would it be and why?
-  //         </span>
-  //       </div>
-  //       <div className="flex flex-col gap-4">
-  //         <textarea
-  //           type="text"
-  //           {...register("fictional")}
-  //           class="bg-gray-50 border h-28 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-  //           placeholder="Enter your response"
-  //           required
-  //         ></textarea>
-  //       </div>
-  //       <div className="grow"></div>
-  //     </div>
-  //   );
-  // }
-  // function Q6() {
-  //   const [status, setStatus] = useState("hidden")
-  //   useEffect(() => {
-  //     setStatus("hidden")
-  //     if (currentQuestion == 5) {
-  //       setStatus("flex")
-  //     }
-  //   }, [currentQuestion])
-  //   return (
-  //     <div className={`${status} flex-col grow w-full items-center justify-center`}>
-  //       <div className="p-5">Question 6/11</div>
-  //       <Separator />
-  //       <div className="grow"></div>
-  //       <div class="text-xl mb-8 p-3">
-  //         <span class="flex flex-row ">
-  //           Are you familiar with any specific frameworks, tools, or platforms
-  //           commonly used in the field(s)? If so, please list them and describe
-  //           your proficiency
-  //         </span>
-  //       </div>
-  //       <div className="flex flex-col gap-4">
-  //         <textarea
-  //           type="text"
-  //           {...register("tools")}
-  //           class="bg-gray-50 border h-28 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-  //           placeholder="Enter your response"
-  //           required
-  //         ></textarea>
-  //       </div>
-  //       <div className="grow"></div>
-  //     </div>
-  //   );
-  // }
-
   function Q5() {
     const [status, setStatus] = useState("hidden")
     useEffect(() => {
@@ -290,8 +191,107 @@ export default function Forms() {
       }
     }, [currentQuestion])
     return (
+      <div className={`${status} flex-col grow w-full items-center justify-center`}>
+        <div className="p-5">Question 5/8</div>
+        <Separator />
+        <div className="grow"></div>
+        <div class="text-xl mb-8 p-3">
+          <span class="flex flex-col">
+            What tech domains do you wish to participate in this year? Please Elaborate
+            <h1 class="flex justify-center">(eg: AI/ML, Web3, Game Development, etc)</h1>
+            <h1 class="flex justify-center">(Tech only)</h1>
+          </span>
+        </div>
+        <div className="flex flex-col gap-4">
+          <textarea
+            type="text"
+            {...register("techq")}
+            class="bg-gray-50 border h-28 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter your response"
+
+          ></textarea>
+        </div>
+        <div className="grow"></div>
+      </div>
+    );
+  }
+  function Q6() {
+    const [status, setStatus] = useState("hidden")
+    useEffect(() => {
+      setStatus("hidden")
+      if (currentQuestion == 5) {
+        setStatus("flex")
+      }
+    }, [currentQuestion])
+    return (
+      <div className={`${status} flex-col grow w-full items-center justify-center`}>
+        <div className="p-5">Question 6/8</div>
+        <Separator />
+        <div className="grow"></div>
+        <div class="text-xl mb-8 p-3">
+          <span class="flex flex-col ">
+            How do you approach conflict resolution within a team or between
+            team members?
+            <h1 class="flex justify-center">(Management only)</h1>
+          </span>
+        </div>
+        <div className="flex flex-col gap-4">
+          <textarea
+            type="text"
+            {...register("manageq")}
+            class="bg-gray-50 border h-28 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter your response"
+
+          ></textarea>
+        </div>
+        <div className="grow"></div>
+      </div>
+    );
+  }
+  function Q7() {
+    const [status, setStatus] = useState("hidden")
+    useEffect(() => {
+      setStatus("hidden")
+      if (currentQuestion == 6) {
+        setStatus("flex")
+      }
+    }, [currentQuestion])
+    return (
+      <div className={`${status} flex-col grow w-full items-center justify-center`}>
+        <div className="p-5">Question 7/8</div>
+        <Separator />
+        <div className="grow"></div>
+        <div class="text-xl mb-8 p-3">
+          <span class="flex flex-col ">
+            Differentiate between vector images and raster images.
+            <h1 class="flex justify-center">(Design Only)</h1>
+          </span>
+        </div>
+        <div className="flex flex-col gap-4">
+          <textarea
+            type="text"
+            {...register("designq")}
+            class="bg-gray-50 border h-28 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter your response"
+
+          ></textarea>
+        </div>
+        <div className="grow"></div>
+      </div>
+    );
+  }
+
+  function Q8() {
+    const [status, setStatus] = useState("hidden")
+    useEffect(() => {
+      setStatus("hidden")
+      if (currentQuestion == 7) {
+        setStatus("flex")
+      }
+    }, [currentQuestion])
+    return (
       <div className={`${status} flex-col grow w-full items-center justify-center gap-4`}>
-        <div className="p-5">Question 5/5</div>
+        <div className="p-5">Question 8/8</div>
         <Separator />
         <div className="grow"></div>
         {/* <div class="text-xl">
@@ -340,9 +340,9 @@ export default function Forms() {
     <Q3 key={3} />,
     <Q4 key={4} />,
     <Q5 key={5} />,
-    // <Q6 key={6} />,
-    //   <Q7 key={7} />,
-    //   <Q8 key={8} />, ,
+    <Q6 key={6} />,
+    <Q7 key={7} />,
+    <Q8 key={8} />,
     //   <Q9 key={9} />,
     //   <Q10 key={10} />,
     //   <Q11 key={11} />
@@ -376,7 +376,7 @@ export default function Forms() {
       class="flex flex-col justify-center items-center min-h-screen grow pt-14 pl-5 pb-5 pr-5 text-white "
     >
       <div className="grow flex flex-col bg-black border-cyan-400 border-2 border-solid rounded-lg shadow-lg shadow-cyan-400 drop-shadow-lg w-full p-2">
-        <Progress value={((currentQuestion + 1) / 5) * 100} className="w-full" />
+        <Progress value={((currentQuestion + 1) / 8) * 100} className="w-full" />
         <div className="flex flex-row grow">
           <div className="flex items-center justify-center">
             <button onClick={() => decrement()}>
