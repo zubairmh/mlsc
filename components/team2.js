@@ -69,7 +69,7 @@ export default function TeamComponent2() {
     },
     {
       name: "Reetinder Singh",
-      icon: "/reet.jpeg",
+      icon: "/reet1.jpg",
       position: "Vice Technical Head",
     },
     {
@@ -144,7 +144,7 @@ export default function TeamComponent2() {
         </div>
 
         <h1 className={`text-start ${inter.className} text-4xl mt-10 self-center md:self-start`}>
-        👨‍⚖️ Secretaries
+          👨‍⚖️ Secretaries
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center sm:justify-items-start">
           {secretaries.map((x, i) => (
@@ -173,7 +173,7 @@ export default function TeamComponent2() {
           ))}
         </div>
         <h1 className={`text-start ${inter.className} text-4xl mt-10 self-center md:self-start`}>
-        👨‍💻 Tech Team
+          👨‍💻 Tech Team
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center sm:justify-items-start">
           {tech.map((x, i) => (
@@ -202,7 +202,7 @@ export default function TeamComponent2() {
           ))}
         </div>
         <h1 className={`text-start ${inter.className} text-3xl sm:text-4xl mt-10 self-center md:self-start`}>
-        👨‍✈️ Management Team
+          👨‍✈️ Management Team
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center sm:justify-items-start">
           {management.map((x, i) => (
@@ -231,7 +231,7 @@ export default function TeamComponent2() {
           ))}
         </div>
         <h1 className={`text-start ${inter.className} text-4xl mt-10 self-center md:self-start`}>
-        👨‍🚀 Design Team
+          👨‍🚀 Design Team
         </h1>
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center sm:justify-items-start">
           {design.map((x, i) => (
