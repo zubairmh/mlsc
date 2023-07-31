@@ -67,7 +67,8 @@ export default function Navbar({ children }) {
           <Link href="/about">About</Link>
           <Link href="/team">Team</Link>
           <Link href="/events">Events</Link>
-          <button onClick={() => toast({variant:"destructive", title:"Forms Closed"})}>Forms</button>
+          <Link href="/forms">Forms</Link>
+          {/* <button onClick={() => toast({ variant: "destructive", title: "Forms Closed" })}>Forms</button> */}
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -86,12 +87,12 @@ export default function Navbar({ children }) {
                 About
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push("/team")}>
-                  Team
+                Team
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push("/events")}>
-                  Events
+                Events
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => toast({variant:"destructive", title:"Forms Closed"})}>
+              <DropdownMenuItem onClick={() => router.push("/forms")}>
                 Form
               </DropdownMenuItem>
             </DropdownMenuGroup>
@@ -102,4 +103,5 @@ export default function Navbar({ children }) {
       {children}
     </div>
   );
+
 }
