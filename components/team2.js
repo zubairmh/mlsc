@@ -64,7 +64,7 @@ export default function TeamComponent2() {
   const tech = [
     {
       name: "Zubair Mohammed",
-      icon: "/zubair.jpeg",
+      icon: "/zubair2.jpg",
       position: "Technical Head",
     },
     {
