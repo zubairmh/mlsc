@@ -24,9 +24,9 @@ export default function TeamComponent2() {
       position: "Joint Secretary",
     },
     {
-      name: "Armeen Kaur Luthra ",
-      icon: "/armeen.jpg",
-      position: "Joint Secretary",
+      name: "Pranav Gautam",
+      icon: "/pranav.jpg",
+      position: "Management Team",
     },
   ];
   const management = [
@@ -54,17 +54,17 @@ export default function TeamComponent2() {
       name: "Priyansh Goel",
       icon: "/priyansh.jpeg",
       position: "Management Team",
-    },
-    {
-      name: "Pranav Gautam",
-      icon: "/pranav.jpg",
-      position: "Management Team",
-    },
+    }
   ];
   const tech = [
     {
       name: "Zubair Mohammed",
       icon: "/zubair2.jpg",
+      position: "Technical Head",
+    },
+    {
+      name: "Rachancheet Singh",
+      icon: "/rachan.jpg",
       position: "Technical Head",
     },
     {
