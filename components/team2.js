@@ -26,7 +26,7 @@ export default function TeamComponent2() {
     {
       name: "Pranav Gautam",
       icon: "/pranav.jpg",
-      position: "Management Team",
+      position: "Joint Secretary",
     },
   ];
   const management = [
