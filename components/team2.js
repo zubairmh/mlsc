@@ -51,6 +51,11 @@ export default function TeamComponent2() {
       position: "Management Team",
     },
     {
+      name: "Preetinder",
+      icon: "/preetinder.png",
+      position: "Management Team",
+    },
+    {
       name: "Priyansh Goel",
       icon: "/priyansh.jpeg",
       position: "Management Team",
@@ -70,6 +75,11 @@ export default function TeamComponent2() {
     {
       name: "Reetinder Singh",
       icon: "/reet1.jpg",
+      position: "Vice Technical Head",
+    },
+    {
+      name: "Arshdeep Palial",
+      icon: "/arshdeep.jpeg",
       position: "Vice Technical Head",
     },
     {
