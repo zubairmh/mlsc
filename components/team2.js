@@ -23,11 +23,7 @@ export default function TeamComponent2() {
       icon: "/madhav.jpg",
       position: "Joint Secretary",
     },
-    {
-      name: "Pranav Gautam",
-      icon: "/pranav.jpg",
-      position: "Joint Secretary",
-    },
+    
   ];
   const management = [
     {
@@ -36,35 +32,27 @@ export default function TeamComponent2() {
       position: "Management Head",
     },
     {
-      name: "Navish Goyal",
-      icon: "/navish.png",
-      position: "Vice Management Head",
+      name : "Anubha Kapur",
+      icon : "/anubha.jpg",
+      position: "Marketing Head",
     },
     {
       name: "Manav Singhal",
       icon: "/manav.jpeg",
       position: "Vice Management Head",
     },
-    {
-      name: "Mohin Gupta",
-      icon: "/mohin.png",
-      position: "Management Team",
-    },
+    
     {
       name: "Preetinder",
       icon: "/preetinder.png",
       position: "Management Team",
     },
-    {
-      name: "Priyansh Goel",
-      icon: "/priyansh.jpeg",
-      position: "Management Team",
-    }
+    
   ];
   const tech = [
     {
       name: "Zubair Mohammed",
-      icon: "/zubair2.jpg",
+      icon: "/zubair.jpg",
       position: "Technical Head",
     },
     {
@@ -95,24 +83,24 @@ export default function TeamComponent2() {
   ];
   const design = [
     {
-      name: "Saiyam Singhi",
-      icon: "/saiyam.jpeg",
-      position: "Design Head",
-    },
-    {
       name: "Jatin Aggarwal",
       icon: "/jatin.jpg",
-      position: "Design Team",
+      position: "Design Head",
     },
     {
       name: "Raj Chaudhary",
       icon: "/raj.jpg",
-      position: "Design Team",
+      position: "Vice Design Head",
+    },
+    {
+      name: "Saiyam Singhi",
+      icon: "/saiyam.jpeg",
+      position: "Design Member",
     },
     {
       name: "Simran",
       icon: "/simran.jpg",
-      position: "Design Team",
+      position: "Design Member",
     },
   ];
   return (
