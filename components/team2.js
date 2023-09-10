@@ -27,14 +27,14 @@ export default function TeamComponent2() {
   ];
   const management = [
     {
-      name: "Harshita ",
-      icon: "/harshita.jpeg",
-      position: "Management Head",
-    },
-    {
       name : "Anubha Kapur",
       icon : "/anubha.jpg",
       position: "Marketing Head",
+    },
+    {
+      name: "Harshita ",
+      icon: "/harshita.jpeg",
+      position: "Management Head",
     },
     {
       name: "Manav Singhal",
