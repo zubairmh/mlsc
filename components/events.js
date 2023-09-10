@@ -6,7 +6,7 @@ const inter = Inter({ weight: "700", subsets: ["latin"] });
 export default function EventComponent() {
   const slide = useRef(0);
   const [slidePaused, setSlidePaused] = useState(false);
-  const slides = ["/WARZONE.png", "/ASTELLAR.png"];
+  const slides = ["/ap_dhillon.png", "/ASTELLAR.png"];
   const [currentSlide, setCurrentSlide] = useState(slides[slide.current]);
   useEffect(() => {
     console.log("yes");
