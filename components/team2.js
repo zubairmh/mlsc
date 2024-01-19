@@ -1,5 +1,5 @@
 import Reet from "@/public/reet.jpeg";
-import ment from "@/public/pankajnarula.jpg";
+import ment from "@/public/download_image_1705660268767.png";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Separator } from "./ui/separator";
@@ -118,13 +118,13 @@ export default function TeamComponent2() {
           <Image src={ment} width="350" alt="" className=" drop-shadow-xl" />
           <div className="flex flex-col w-full p-4 outline-none outline-offset-4 outline-4 gap-2 grow">
             <h1 style={inter.style} className="text-3xl">
-              Dr. Pankaj Narula
+              Dr. Payal 
             </h1>
             <h1 style={inter2.style} className="text-xl">
               Assistant Professor
             </h1>
             <h1 style={inter3.style} className="text-base text-gray-600">
-              School of Mathematics
+              Computer Science and Engineering
             </h1>
             <h1 style={inter3.style} className="text-base text-gray-600">
               Thapar Institute of Engineering and Technology
@@ -136,7 +136,7 @@ export default function TeamComponent2() {
               className="flex flex-row items-center gap-1"
             >
               <HiOutlineMail size={24} />
-              <span className="text-base">pankaj.narula@thapar.edu</span>
+              <span className="text-base">payal@thapar.edu</span>
             </Link>
           </div>
         </div>
